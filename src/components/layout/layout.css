@@ -1,9 +1,13 @@
-.layout{
-    padding: 0 3vw;
+.layout > header{
+    position: fixed;
+    width: 100%;
+    height: 4.23vw;
+    top: 0;
 }
 
-
-.mobile .layout {
-    padding: 0;
-    margin: 0;
+.layout > main{
+    height: 100vw;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 4.23vw;
 }

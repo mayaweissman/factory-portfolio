@@ -1,0 +1,104 @@
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.menu > img{
+    width: 7vw;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+.menu > button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 0;
+    border-radius: 26px;
+    width: 8vw;
+    height: 2.6vw;
+    font-size: 1.3vw;
+    position: absolute;
+    right: 7vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu > button:hover{
+    cursor: pointer;
+}
+
+.slide-right .btn-txt{
+    animation: .7s SlideRight both;
+}
+
+.slide-right .mail-icon{
+    animation: .7s SlideLeft both;
+}
+
+.slide-left .btn-txt{
+    animation: .7s SlideFromRight both;
+}
+
+.slide-left .mail-icon{
+    animation: .7s SlideFromLeft both;
+}
+
+.mail-icon{
+    width: 3vw;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-5vw);
+}
+
+
+@keyframes SlideRight{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(8vw);
+    }
+}
+
+@keyframes SlideFromRight{
+    0%{
+        opacity: 0;
+        transform: translateX(8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes SlideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-5vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes SlideFromLeft{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-5vw);
+    }
+}
